@@ -1,0 +1,139 @@
+/* Basic body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Dark gradient for JavaScript */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Quiz container styling */
+.quiz-container {
+  background-color: #1e272e; /* Dark theme for JavaScript */
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Quiz info section */
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.timer,
+.question-number {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Question styling */
+.question {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* Options styling */
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  background-color: #34495e; /* Dark gray for options */
+  color: #ecf0f1; /* Light text for readability */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.option:hover {
+  background-color: #2ecc71; /* Green hover effect */
+  transform: scale(1.05);
+}
+
+/* Next button styling */
+.next-button {
+  background-color: #e74c3c; /* Red for next button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.next-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Quiz container */
+  .quiz-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  /* Smaller font size for timer and question number */
+  .timer,
+  .question-number {
+    font-size: 16px;
+  }
+
+  /* Smaller font size for question text */
+  .question {
+    font-size: 20px;
+  }
+
+  /* Reduced padding for options */
+  .option {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  /* Adjust next button size */
+  .next-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smaller screen adjustments */
+  .quiz-container {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .timer,
+  .question-number {
+    font-size: 14px;
+  }
+
+  .question {
+    font-size: 18px;
+  }
+
+  .option {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .next-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
