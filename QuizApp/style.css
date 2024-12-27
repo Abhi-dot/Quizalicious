@@ -1,0 +1,300 @@
+/* Reset padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Smooth scrolling for all devices */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles for the body and font */
+body {
+  font-family: sans-serif;
+}
+
+/* Landing Page */
+.landing-page {
+  background: white url(.//images/bg1.jpg) no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.landing-page .wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.landing-page .flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.landing-page .vacation-heading {
+  font-size: 50px;
+}
+
+/* Button Styles */
+.btn {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(0, 128, 128);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #d0dd13;
+}
+
+/* Header Section */
+.quiz-header {
+  background: radial-gradient(#056886, rgb(6, 63, 90));
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.quiz-header .heading {
+  font-size: 60px;
+}
+
+/* Navigation Bar */
+.main-nav {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 10px black;
+  position: sticky; /* Ensures it stays at the top */
+  top: 0;
+  overflow: hidden;
+  z-index: 1000; /* Ensures nav bar is always on top */
+}
+
+.main-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 30px;
+  display: inline-block;
+}
+
+.main-nav a:hover {
+  background-color: teal;
+  color: white;
+  border-radius: 30px;
+}
+
+/* Quiz Heading */
+.quiz-heading {
+  font-size: 90px;
+  color: gray;
+}
+
+.quiz-text {
+  color: #bfbebe;
+  font-size: 25px;
+  text-align: justify;
+  padding: 0px 40px;
+}
+
+.Performer-quiz-section {
+  text-align: center;
+}
+
+.Performer-quiz-section .quiz-heading {
+  padding-top: 60px;
+}
+
+.Performer-quiz-section .image-card {
+  object-fit: cover;
+}
+
+/* Image Card */
+.image-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.image-card img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.image-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Notes Section */
+.notes-section {
+  text-align: center;
+  padding: 100px;
+}
+
+.notes-section .notes-div {
+  margin-top: 20px;
+}
+
+.notes-section .notes-wrapper {
+  border: 2px solid black;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  display: inline-block;
+  margin: 20px;
+  position: relative; /* Ensure proper stacking context */
+  z-index: 1; /* Ensures images don't overlap the navigation bar */
+}
+
+.notes-section .notes-wrapper img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.notes-section .notes-wrapper img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Quiz Packages Section */
+.quiz-packages-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.quiz-packages-section .quiz-heading {
+  padding-top: 60px;
+}
+
+.quiz-packages-section .package-wrapper {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.package-wrapper .package-card {
+  box-shadow: 0 0 10px gray;
+  border-radius: 5px;
+  width: 260px;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.package-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.package-card .card-heading {
+  font-size: 25px;
+}
+
+.package-card .card-text {
+  font-size: 20px;
+  color: gray;
+}
+
+.package-card .btn {
+  border-radius: 40px;
+  box-shadow: 0 0 5px gray;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.package-card .btn:hover {
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: black;
+  padding: 40px;
+  text-align: center;
+  color: teal;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .landing-page .vacation-heading {
+    font-size: 35px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+  }
+
+  .quiz-header .heading {
+    font-size: 40px;
+  }
+
+  .main-nav a {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+
+  .quiz-heading {
+    font-size: 50px;
+  }
+
+  .quiz-text {
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+
+  .image-card img {
+    height: 250px;
+  }
+
+  .notes-section {
+    padding: 50px;
+  }
+
+  .notes-section .notes-wrapper {
+    width: 80%;
+    height: 150px;
+  }
+
+  .package-wrapper .package-card {
+    width: 80%;
+  }
+
+  .package-card .card-heading {
+    font-size: 20px;
+  }
+
+  .package-card .card-text {
+    font-size: 18px;
+  }
+}

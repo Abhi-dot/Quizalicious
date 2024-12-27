@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--Landing Page-->
+  <section class="landing-page">
+
+    <div class="wrapper">
+      <div class="flex-content">
+        <h1 class="vacation-heading">Welcome To Quizalicious</h1>
+        <a href="#quiz-packages" class="btn"> Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Header section-->
+  <header class="quiz-header" id="quiz-header">
+    <h1 class="heading">Quizalicious</h1>
+  </header>
+
+  <nav class="main-nav">
+    <a href="#">Home</a>
+    <a href="#quiz-packages">Quiz</a>
+    <a href="#Performer">Top Performers</a>
+    <a href="#notes">Notes</a>
+  </nav>
+
+  <section class="quiz-packages-section" id="quiz-packages">
+    <h1 class="quiz-heading">Coding Quiz</h1>
+    <p class="quiz-text">A coding quiz is an interactive challenge designed to test your programming skills and problem-solving abilities. It typically involves solving a series of algorithmic or logic-based problems within a set time limit. Participants are assessed on their proficiency with various coding languages, understanding of data structures, and efficiency in implementing solutions. Coding quizzes can be a fun and educational way to enhance your programming knowledge and prepare for real-world technical interviews. Whether you're a beginner or an expert, it's a great way to put your coding abilities to the test.
+    </p>
+    <div class="package-wrapper">
+      <div class="package-card">
+        <img src=".//images/java.jpg" alt="">
+        <p class="card-heading">Java</p>
+        <p class="card-text"> Test your knowledge of Java fundamentals, object-oriented principles, and core libraries. </p>
+        <p class="card-heading">400₹</p>
+        <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+      </div>
+      <div class="package-card">
+        <img src=".//images/python.jpg" alt="">
+        <p class="card-heading">Python</p>
+        <p class="card-text">Challenge yourself with Python syntax, data structures, and programming paradigms.</p>
+        <p class="card-heading">400₹</p>
+        <button class="btn" onclick="startQuiz('python')">Take Quiz</button>
+    </div>
+    <div class="package-card">
+        <img src=".//images/js.png" alt="">
+        <p class="card-heading">JavaScript</p>
+        <p class="card-text">Evaluate and test your understanding of JavaScript syntax and asynchronous programming. </p>
+        <p class="card-heading">300₹</p>
+        <button class="btn" onclick="startQuiz('javascript')">Take Quiz</button>
+    </div>
+    <div class="package-card">
+        <img src=".//images/net.png" alt="">
+        <p class="card-heading">.Net</p>
+        <p class="card-text">Assess and test your skills in .NET framework, C#, and application development by thi quiz.</p>
+        <p class="card-heading">200₹</p>
+        <button class="btn" onclick="startQuiz('net')">Take Quiz</button>
+    </div>
+
+    </div>
+  </section>
+
+  <section class="Performer-quiz-section" id="Performer">
+    <h1 class="quiz-heading">Top Performer</h1>
+    <p class="quiz-text">Our top performers are the brightest minds who have consistently excelled in our quizzes, showcasing their expertise and dedication. They represent the pinnacle of knowledge across various subjects like Java, Python, and more. With impressive scores, they set the benchmark for others to follow and inspire the entire community to strive for excellence</p>
+    <div class="image-card">
+        <img src=".//images/m1.jpeg" alt="">
+        <img src=".//images/m2.jpg" alt="">
+        <img src=".//images/m3.jpg" alt="">
+        <img src=".//images/m4.jpg" alt="">
+        <img src=".//images/m5.jpg" alt="">
+        <img src=".//images/m6.jpg" alt="">
+    </div>
+    
+</section>
+
+
+<section class="notes-section" id="notes">
+    <h1 class="quiz-heading">Subject notes</h1>
+    <p class="quiz-text">Subject notes are concise summaries of key concepts, definitions, and examples designed to enhance understanding and retention. They help in quick revision, highlight essential topics, and serve as a structured guide for efficient learning and exam preparation.</p>
+    <div class="notes-div">
+        <div class="notes-wrapper">
+          <a href="https://github.com/krishnasagrawal/Java-Programming-Notes">
+            <img src=".//images/java.jpg" alt="">
+          </a>
+        </div>
+        <div class="notes-wrapper">
+          <a href="https://www.studocu.com/in/document/islamic-university-of-science-and-technology/theory-of-computation-formal-languages/compiler-design-hand-written-notes/44823468">
+            <img src=".//images/compiler.png" alt="">
+          </a>
+        </div>
+        <div class="notes-wrapper">
+          <a href="https://github.com/kousen/spring-and-spring-boot/blob/master/Spring%20and%20Spring%20Boot%20Notes%20Dec%202020.pdf">
+            <img src=".//images/spring.png" alt="">
+          </a>
+        </div>
+        <div class="notes-wrapper">
+          <a href="https://www.studocu.com/in/document/dr-apj-abdul-kalam-technical-university/web-technology/react-js-handwritten-notes/97123765">
+            <img src=".//images/react.png" alt="">
+            </a>
+        </div>
+        <div class="notes-wrapper">
+          <a href="https://www.studocu.com/in/document/rajiv-gandhi-proudyogiki-vishwavidyalaya/iot-application-and-web-development/devops-handwritten-notes-abhishek-veeramalla/102447114">
+            <img src=".//images/dev.jpg" alt="">
+            </a>
+        </div>
+        <div class="notes-wrapper">
+          <a href="https://notedinsights.com/wp-content/plugins/pdfjs-viewer-shortcode/pdfjs/web/viewer.php?file=https://notedinsights.com/wp-content/uploads/2024/08/Python-Handwritten-Notes.pdf&attachment_id=29042&dButton=false&pButton=false&oButton=false&sButton=true">
+            <img src=".//images/python.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer-section">
+    <small>All Right Reserver</small>
+    <small>Developed  & Maintained By
+        <a href="https://www.linkedin.com/in/abhishek-parida-1b337b2a1/" target="_blank">Abhishek Parida</a>
+    </small>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
